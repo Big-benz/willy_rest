@@ -14,8 +14,15 @@ from pathlib import Path
 
 import os
 
+from dotenv import load_dotenv
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+load_dotenv(os.path.join(BASE_DIR, ".env"))
+
+SECRET_KEY = os.getenv("django-insecure-u7#m3f3n&1s_ncyjy4zq5)ppu7eh^_*o95%#3_yv0@x_bih@p5")
+
 
 
 # Quick-start development settings - unsuitable for production

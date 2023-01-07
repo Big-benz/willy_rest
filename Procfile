@@ -1,1 +1,1 @@
-web:gunicorn WILLY_REST.wsgi
+`{web:gunicorn WILLY_REST.wsgi}`
